@@ -1181,7 +1181,7 @@
 					val = getCellData(col.value,objData);
 
 					if (typeof(col.format) === "function") {
-						val = col.format(val);
+						val = col.format(val, objData);
 					}
 
 					// put images instead of text if needed
